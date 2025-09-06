@@ -3,25 +3,22 @@ import SayMyName from "./components/SayMyName";
 import Pessoa from "./components/Pessoa";
 import Frase from "./components/frase";
 import List from "./components/List";
+import Evento from "./components/evento";
+import Form from "./components/form";
 import './App.css';
 
 
 function App() {
 
-  const nome = "thaynara"
 
   return (
 
     <div className="App">
-      <Frase/>
-      <HelloWorld/>
-      <h1>ola mundo!</h1>
-      <SayMyName nome = "jv"/>
-      <SayMyName nome = {nome}/>
+      <h1>testando eventos</h1>
+      <Evento numero = "1"/>
+      <Evento numero = "2"/>
 
-
-      <Pessoa nome="jv" idade = "16" profissao="densenvovedor" foto = "https://via.placeholder.com/150"/>
-      <List/>
+      <Form/>
     </div>
     
   );
